@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      margin: 0 10px;
+      cursor: pointer;
+      background-color: #70c4ec;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Counter Application</h1>
+  <p>Value: <span id="counter">0</span></p>
+  <button id="incrementBtn">Increment</button>
+  <button id="decrementBtn">Decrement</button>
+
+  <script>
+    const counterElement = document.getElementById('counter');
+    const incrementBtn = document.getElementById('incrementBtn');
+    const decrementBtn = document.getElementById('decrementBtn');
+    let counterValue = 0;
+
+    function updateCounter() {
+      counterElement.textContent = counterValue;
+    }
+
+    incrementBtn.addEventListener('click', function() {
+      counterValue++;
+      updateCounter();
+    });
+
+    decrementBtn.addEventListener('click', function() {
+      if (counterValue > 0) {
+        counterValue--;
+        updateCounter();
+      }
+    });
+  </script>
+</body>
+</html>
