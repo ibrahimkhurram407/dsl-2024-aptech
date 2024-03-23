@@ -1,4 +1,3 @@
-// script.js
 function generateCheckerboard() {
   const rows = document.getElementById("rows").value;
   const columns = document.getElementById("columns").value;

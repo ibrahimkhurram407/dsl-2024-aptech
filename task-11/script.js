@@ -1,4 +1,3 @@
-// Draws a rainbow based on the selected colors
 function drawRainbow() {
   const canvas = document.getElementById("rainbowCanvas");
   if (!canvas.getContext) {
@@ -7,10 +6,8 @@ function drawRainbow() {
   }
   const ctx = canvas.getContext("2d");
 
-  // Clear the canvas before drawing the new rainbow
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-  // Array of colors chosen by the user
   const colors = [
     document.getElementById("color1").value,
     document.getElementById("color2").value,
@@ -21,7 +18,7 @@ function drawRainbow() {
     document.getElementById("color7").value,
   ];
 
-  // Loop through the colors to draw each arc of the rainbow
+  //credits to stack overflow :)
   colors.forEach((color, i) => {
     ctx.beginPath();
     ctx.arc(300, canvas.height, 100 + i * 20, Math.PI, 0, false);
