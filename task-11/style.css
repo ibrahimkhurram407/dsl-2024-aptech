@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#colorPickers {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#colorPickers input[type="color"] {
+    width: 48px;
+    height: 48px;
+    margin: 0 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#colorPickers button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #008CBA;
+    /* A more cheerful color than gray */
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+canvas {
+    border: 1px solid #ddd;
+    background-color: #fafafa;
+    /* Slightly off-white for visibility */
+}
