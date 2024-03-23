@@ -5,6 +5,11 @@ body {
     text-align: center;
 }
 
+section.main {
+    display: flex;
+    flex-direction: column;
+}
+
 #colorPickers {
     margin-bottom: 20px;
     background-color: #fff;
